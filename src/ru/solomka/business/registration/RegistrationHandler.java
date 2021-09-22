@@ -14,7 +14,7 @@ public class RegistrationHandler {
         this.plugin = plugin;
     }
 
-    private final Listener[] events = new Listener[] { new MainMenu(Main.getInstance()) }; // TODO 21.09.21
+    private final Listener[] events = new Listener[] { new MainMenu(Main.getInstance()) }; // TODO 22.09.21
 
     public void registrationEvents() {
         for(Listener listener : events) {
