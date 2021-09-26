@@ -34,12 +34,10 @@ public class Salary {
     }
 
     private final HandlerBusiness business = new HandlerBusiness(Main.getInstance());
-    private final List<Integer> list = new ArrayList<>();
     private final Messages messages = new Messages();
 
     private int salary() {
-        list.addAll(business.getAllHaveBiz(p));
-        for(int i : list) {
+        for(int i : business.getAllHaveBiz(p)) {
             salary += getInt("Business.Id." + i + ".Salary");
         }
         return salary;
