@@ -46,7 +46,7 @@ public class HandlerBusiness implements IBusiness {
     public void setSalary(UUID uuid, int bizId, int salary) throws IOException {
         File file = new File(Main.getInstance().getDataFolder() + "/data.yml");
         FileConfiguration cfg = YamlConfiguration.loadConfiguration(file);
-        setValue(cfg, file,"players." + uuid + "." + bizId + ".Owner", salary);
+        setValue(cfg, file,"players." + uuid + "." + bizId + ".Salary", salary);
     }
 
     @Override
