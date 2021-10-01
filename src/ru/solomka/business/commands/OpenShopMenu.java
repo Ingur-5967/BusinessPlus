@@ -19,7 +19,7 @@ public class OpenShopMenu implements CommandExecutor {
         Player p = (Player) sender;
 
         if(!p.hasPermission("Business.open")) {
-            Messages.notHavePerm.replace("{permission}", "Business.open");
+            Messages.notHavePerm.replace("{permission}", "Business.open").send(p);
             return true;
         }
         menu.create(p,36, InventoryType.MAIN);
