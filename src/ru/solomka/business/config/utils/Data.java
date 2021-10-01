@@ -14,8 +14,7 @@ public class Data {
 
     public static void init() throws IOException, InvalidConfigurationException {
         File file = new File(Main.getInstance().getDataFolder() + "/data.yml");
-        FileConfiguration cfg = YamlConfiguration.loadConfiguration(file);
-        cfg.load(file);
+        YamlConfiguration.loadConfiguration(file);
     }
 
     public static void setValue(@NotNull FileConfiguration cfg, File file, String str, Object obj) throws IOException {
