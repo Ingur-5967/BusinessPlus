@@ -22,7 +22,7 @@ public class ListBuilder {
             sb.append(string).append("\n");
         }
         String result = sb.toString().replace("%salary%", String.valueOf(new Salary().salary(p)))
-                .replace("%count_biz%", String.valueOf(business.getAllHaveBiz(loadConfiguration(new File(Main.getInstance().getDataFolder() + "/data.yml")),p).size()));
+                .replace("%count_biz%", String.valueOf(business.getAllHaveBiz(loadConfiguration(new File(Main.getInstance().getDataFolder(), "data.yml")), p).size()));
         p.sendMessage(translateAlternateColorCodes('&', result));
     }
 }
