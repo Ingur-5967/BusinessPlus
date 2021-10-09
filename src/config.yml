@@ -1,0 +1,213 @@
+Business:
+  #=========
+  # Разделы:
+  # RegistrationId - все айди бизнесов
+  # GlobalSettings - глобальные настройки
+  # Id - настройка бизнесов
+  #===========
+  # Настройка:
+  # 0: пример айди бизнеса (Не указывайте отрицательные числа!)
+  #   Slot - слот, где будет расположен предмет (Бизнес) в GUI (Cлоты не должны повторяться!)
+  #   Name - имя предмета, которое будет отображаться в GUI
+  #   Item - предмет, который будет отображаться в GUI (Можно писать в нижнем регистре, например dirt)
+  #   Class - класс бизнеса (LOW/MEDIUM/HIGH) для каждого класса ограничение в 20 бизнесов, отдельное меню
+  #   Lore - описание предмета (Бизнеса)
+  #   Cost - стоимость бизнеса
+  #   Salary - зарплата с бизнеса в N секунд (Период настраивается в разделе Settings)
+  #   CostSale - стоимость при продаже бизнеса
+  #===========
+  GlobalSettings:
+    ColorGlassPane: 7 # 0(Белый),1(Оранжевый),2(Пурпурная),3(Голубая),4(Желтая),5(Лаймовая),6(Розовая),7(Серая),8(Светло-серая),9(Бирюзовая),10(Фиолетовая),11(Синяя),12(Коричневая),13(Зеленая),14(Красная),15(Черная)
+    Update: # Настройка улучшений
+      Biz:
+        DOUBLE_MONEY:
+          Cost: 1000
+        REDUCTION_TAX:
+          Cost: 3000
+        START_PRICE_SELL:
+          Cost: 700
+      Player:
+        TWO_BUSINESS:
+          Cost: 5000
+        FOUR_BUSINESS:
+          Cost: 15000
+        SIX_BUSINESS:
+          Cost: 30000
+#
+  RegistrationId: # Все айдишники, на которые зареганы бизнесы, если айди какого-то бизнеса не будет вписан - возникнут ошибки!
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+  Id:
+    0:
+      Slot: 0
+      Name: "&6&l[test]"
+      Item: APPLE
+      Class: LOW
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    1:
+      Slot: 1
+      Name: "&6&l[test2]"
+      Item: APPLE
+      Class: LOW
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    2:
+      Slot: 2
+      Name: "&6&l[test3]"
+      Item: APPLE
+      Class: LOW
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    3:
+      Slot: 3
+      Name: "&6&l[test4]"
+      Item: APPLE
+      Class: LOW
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    4:
+      Slot: 4
+      Name: "&6&l[test5]"
+      Item: APPLE
+      Class: LOW
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    5:
+      Slot: 5
+      Name: "&6&l[test6]"
+      Item: APPLE
+      Class: MEDIUM
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    6:
+      Slot: 6
+      Name: "&6&l[test7]"
+      Item: APPLE
+      Class: MEDIUM
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    7:
+      Slot: 7
+      Name: "&6&l[test8]"
+      Item: APPLE
+      Class: MEDIUM
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    8:
+      Slot: 8
+      Name: "&6&l[test9]"
+      Item: APPLE
+      Class: MEDIUM
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    9:
+      Slot: 9
+      Name: "&6&l[test10]"
+      Item: APPLE
+      Class: MEDIUM
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    10:
+      Slot: 10
+      Name: "&6&l[test11]"
+      Item: APPLE
+      Class: HIGH
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    11:
+      Slot: 11
+      Name: "&6&l[test12]"
+      Item: APPLE
+      Class: HIGH
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    12:
+      Slot: 12
+      Name: "&6&l[test13]"
+      Item: APPLE
+      Class: HIGH
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    13:
+      Slot: 13
+      Name: "&6&l[test14]"
+      Item: APPLE
+      Class: HIGH
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
+    14:
+      Slot: 14
+      Name: "&6&l[test15]"
+      Item: APPLE
+      Class: HIGH
+      Lore:
+        - ""
+        - ""
+        - ""
+      Cost: 11000
+      Salary: 110
