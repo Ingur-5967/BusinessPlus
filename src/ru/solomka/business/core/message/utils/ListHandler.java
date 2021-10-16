@@ -26,8 +26,7 @@ public class ListHandler {
         }
 
        List<String> result = ListHandler.replace("%salary%", String.valueOf(new Salary().salary(p)))
-               .replace("%count_biz%", String.valueOf(business.getAllHaveBiz(p).size()))
-               .replace("%count_biz%", String.valueOf(business.getAllHaveBiz(p).size())).list(Collections.singletonList(sb.toString()));
+               .replace("%count_biz%", String.valueOf(business.getAllHaveBiz(p).size()))).list(Collections.singletonList(sb.toString()));
 
         for(String str : result) {
             p.sendMessage(translateAlternateColorCodes('&', str));
