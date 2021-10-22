@@ -25,21 +25,21 @@ public class ClassBusiness {
         switch (classType) {
             case LOW: {
                 for (int biz : getIntegerList("Business.RegistrationId")) {
-                    if(!isValuableClassType(biz) || !getString("Business.Id." + biz + ".Class").contains(classType.name())) continue;
+                    if(!isValuableClassType(biz)) continue;
                     listLow.add(biz);
                 }
                 return listLow;
             }
             case MEDIUM: {
                 for (int biz : getIntegerList("Business.RegistrationId")) {
-                    if(!isValuableClassType(biz) || !getString("Business.Id." + biz + ".Class").contains(classType.name())) continue;
+                    if(!isValuableClassType(biz)) continue;
                     listMedium.add(biz);
                 }
                 return listMedium;
             }
             case HIGH: {
                 for (int biz : getIntegerList("Business.RegistrationId")) {
-                    if(!isValuableClassType(biz) || !getString("Business.Id." + biz + ".Class").contains(classType.name())) continue;
+                    if(!isValuableClassType(biz)) continue;
                     listHigh.add(biz);
                 }
                 return listHigh;
