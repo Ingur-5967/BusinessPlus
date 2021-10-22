@@ -37,7 +37,7 @@ public class Salary {
                 Messages.salary.send(p);
                 Messages.paymentTaxMessage.replace("{tax}", String.valueOf(percent(p))).send(p);
             }
-        }.runTaskTimer(Main.getInstance(), 0,20L);
+        }.runTaskTimer(Main.getInstance(), 3600 * 20L, 3600 * 20L);
     }
 
     public int percent(Player p) {
