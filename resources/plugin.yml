@@ -1,0 +1,11 @@
+name: BusinessPlus
+main: ru.solomka.business.Main
+version: 1.0.0
+depend:
+  - Vault
+commands:
+  business:
+    usage: /business
+  bsreload:
+    usage: /bsreload
+
