@@ -28,7 +28,7 @@ public class ShopOperationHandler {
             return;
         }
 
-        new CustomConfig("data").setValue("players." + p.getUniqueId() + ".Business." + bizId + ".Updates", "");
+        new CustomConfig("data").setValue("players." + p.getUniqueId() + ".Business." + bizId, "");
         Messages.buyBusiness.replace("{id}", String.valueOf(bizId)).replace("{cost}", String.valueOf(getInt("Business.Id." + bizId + ".Cost"))).send(p);
         p.closeInventory();
     }
