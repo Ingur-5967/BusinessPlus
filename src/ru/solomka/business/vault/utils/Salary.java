@@ -18,7 +18,6 @@ public class Salary {
     private final HandlerBusiness business = new HandlerBusiness();
 
     public int salary(Player p) {
-        salary = 0;
         for(int i : business.getAllHaveBiz(p)) {
             salary += getInt("Business.Id." + i + ".Salary");
         }
